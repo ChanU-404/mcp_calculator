@@ -20,7 +20,8 @@ auth = BearerAuthProvider(
     audience="calculator"
 )
 
-mcp = FastMCP(name="calculator", auth=auth)
+#mcp = FastMCP(name="calculator", auth=auth)
+mcp  = FastMCP(name="calculator")
 
 @mcp.tool
 def multiply(a: float, b: float) -> float:
